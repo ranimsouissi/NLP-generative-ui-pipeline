@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NlpFeaturesOut",
+  "type": "object",
+  "required": [
+    "user_id",
+    "session_id",
+    "features",
+    "profiles"
+  ],
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "features": {
+      "type": "object"
+    },
+    "profiles": {
+      "type": "object",
+      "required": [
+        "VARK",
+        "MBTI"
+      ],
+      "properties": {
+        "VARK": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "V",
+                "A",
+                "R",
+                "K"
+              ]
+            },
+            {
+              "type": "object",
+              "required": [
+                "label",
+                "proba"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "enum": [
+                    "V",
+                    "A",
+                    "R",
+                    "K"
+                  ]
+                },
+                "proba": {
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
+        },
+        "MBTI": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[IE][NS][FT][JP]$"
+            },
+            {
+              "type": "object",
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "pattern": "^[IE][NS][FT][JP]$"
+                },
+                "conf": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
