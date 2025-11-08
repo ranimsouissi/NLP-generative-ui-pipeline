@@ -1,0 +1,125 @@
+{
+  "profile": {
+    "learner_id": "visual_extrovert_001",
+    "learning_style": {
+      "visual": 1.0,
+      "auditory": 0.0,
+      "reading": 0.0,
+      "kinesthetic": 0.0
+    },
+    "personality": {
+      "extraversion": 1.0,
+      "intuition": 1.0,
+      "thinking": 0.5,
+      "judging": 0.5
+    },
+    "cognitive": {
+      "processing_speed": 0.5,
+      "working_memory": 0.3333333333333333,
+      "analytical_thinking": 0.0,
+      "creative_thinking": 0.0,
+      "attention_span": 0.2
+    },
+    "behavioral": {
+      "engagement_level": 0.6825,
+      "persistence": 0.26666666666666666,
+      "help_seeking": 0.25,
+      "collaboration_preference": 0.75,
+      "self_regulation": 0.0
+    },
+    "strengths": [
+      "Curiosité et engagement actif"
+    ],
+    "difficulty_areas": [],
+    "recommended_strategies": [
+      "Utiliser des diagrammes, graphiques et supports visuels",
+      "Encourager le travail de groupe et discussions",
+      "Présenter les concepts théoriques et connexions globales",
+      "Décomposer les informations en petites unités",
+      "Encourager à poser des questions et demander de l'aide",
+      "Proposer des objectifs courts et réalisables"
+    ],
+    "confidence_level": 0.30019841271439596,
+    "last_updated": "2025-09-01T06:24:26.992395"
+  },
+  "prompt": "Générer une configuration UI/UX personnalisée pour un apprenant principalement visuel de personnalité extraverti, intuitif avec attention limitée. Il est abandonne facilement, autonome, préfère le travail collaboratif, autorégulation faible. Ses forces incluent : curiosité et engagement actif. La configuration doit inclure le thème, la mise en page, la palette de couleurs et les éléments interactifs recommandés.",
+  "recommendations": {
+    "theme_preference": "high_contrast",
+    "layout_suggestions": [
+      "visual_hierarchy",
+      "image_heavy",
+      "infographics",
+      "minimal_design",
+      "focused_content",
+      "progress_indicators"
+    ],
+    "interaction_patterns": [
+      "social_features",
+      "collaboration_tools",
+      "sharing_options",
+      "guided_workflow",
+      "automatic_save",
+      "reminder_system"
+    ],
+    "color_psychology": {
+      "primary": "#3498db",
+      "secondary": "#2ecc71",
+      "accent": "#f39c12",
+      "background": "#ffffff",
+      "text": "#2c3e50"
+    },
+    "navigation_style": "linear"
+  },
+  "ui_config": {
+    "theme": "high_contrast",
+    "layout": {
+      "type": "standard",
+      "sections": [
+        "header",
+        "content",
+        "footer"
+      ],
+      "features": [
+        "visual_hierarchy",
+        "image_heavy",
+        "infographics",
+        "minimal_design",
+        "focused_content",
+        "progress_indicators"
+      ]
+    },
+    "colors": {
+      "primary": "#3498db",
+      "secondary": "#2ecc71",
+      "accent": "#f39c12",
+      "background": "#ffffff",
+      "text": "#2c3e50"
+    },
+    "typography": {
+      "font_family": "Arial, sans-serif",
+      "font_sizes": {
+        "h1": "2rem",
+        "h2": "1.5rem",
+        "body": "1rem"
+      }
+    },
+    "interactions": [
+      "social_features",
+      "collaboration_tools",
+      "sharing_options",
+      "guided_workflow",
+      "automatic_save",
+      "reminder_system"
+    ],
+    "navigation": {
+      "type": "linear",
+      "position": "top"
+    },
+    "metadata": {
+      "generated_at": "2025-09-01T06:24:26.997721",
+      "generator": "MockUIGenerator",
+      "version": "1.0",
+      "prompt_based": true
+    }
+  }
+}
